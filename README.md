@@ -1,24 +1,25 @@
+<p align="center">
+  <img src="./assets/banner.gif" alt="Banner Wesley Oliveira" width="100%" />
+</p>
+
 # Olá! Eu sou o Wesley 👋
 
-🎓 Estudante de **Análise e Desenvolvimento de Sistemas**
+**Estudante de ADS | Suporte Técnico | Infraestrutura**
 
-💻 Interessado em **Tecnologia, Desenvolvimento e Suporte de TI**
+Sou estudante de **Análise e Desenvolvimento de Sistemas**, apaixonado por tecnologia.  
+Gosto de resolver problemas, aprender algo novo todos os dias e transformar conhecimento em soluções reais.  
+Em constante evolução. 🚀
 
-📚 Atualmente estou estudando:
-- HTML
-- CSS
-- Lógica de Programação
-- Git e GitHub
-- Python
+---
 
-🚀 Estou utilizando o GitHub para registrar meus aprendizados, projetos acadêmicos e minha evolução na área de tecnologia.
-
-## 📌 Sobre mim
+## 👨‍💻 Sobre mim
 
 - 🎓 Cursando Análise e Desenvolvimento de Sistemas
-- 💻 Aprendendo desenvolvimento web
+- 📚 Aprendizado contínuo todos os dias
 - 🛠️ Interesse em Suporte Técnico e Infraestrutura
-- 📖 Sempre buscando aprender novas tecnologias
+- 🚀 Sempre buscando evoluir na tecnologia
+
+---
 
 ## 🛠️ Tecnologias e Ferramentas
 
@@ -26,14 +27,22 @@
   <img src="https://skillicons.dev/icons?i=html,css,python,git,github,vscode" />
 </div>
 
+---
+
 ## 🚀 Projetos
 
-Aqui estão alguns projetos que desenvolvi durante meus estudos:
-
-- 📚 **Repositório de Aprendizados** — Registro dos meus estudos, anotações e exemplos práticos de programação.
+- 📚 **Repositório de Aprendizados** — Registros dos meus estudos, anotações e exemplos práticos de programação.
 - 🌐 **BookShelf** — Projeto desenvolvido com HTML, CSS e JavaScript.
 
- ## 📫 Contato
+---
 
-- 💼 LinkedIn: [Wesley Oliveira](https://www.linkedin.com/in/wesley-oliveira-7392592ba/)
+## 📫 Contato
+
+- 💼 LinkedIn: [Wesley Oliveira](COLE_AQUI_SEU_LINKEDIN)
 - 💻 GitHub: [Wesleyk7](https://github.com/Wesleyk7)
+
+---
+
+## 📊 Contribuições
+
+![](https://github-readme-activity-graph.vercel.app/graph?username=Wesleyk7&theme=github-dark&hide_border=true)
