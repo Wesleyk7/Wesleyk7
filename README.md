@@ -1,16 +1,39 @@
-## Hi there 👋
+# Olá! Eu sou o Wesley 👋
 
-<!--
-**Wesleyk7/Wesleyk7** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Estudante de **Análise e Desenvolvimento de Sistemas**
 
-Here are some ideas to get you started:
+💻 Interessado em **Tecnologia, Desenvolvimento e Suporte de TI**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+📚 Atualmente estou estudando:
+- HTML
+- CSS
+- Lógica de Programação
+- Git e GitHub
+- Python
+
+🚀 Estou utilizando o GitHub para registrar meus aprendizados, projetos acadêmicos e minha evolução na área de tecnologia.
+
+## 📌 Sobre mim
+
+- 🎓 Cursando Análise e Desenvolvimento de Sistemas
+- 💻 Aprendendo desenvolvimento web
+- 🛠️ Interesse em Suporte Técnico e Infraestrutura
+- 📖 Sempre buscando aprender novas tecnologias
+
+## 🛠️ Tecnologias e Ferramentas
+
+<div>
+  <img src="https://skillicons.dev/icons?i=html,css,python,git,github,vscode" />
+</div>
+
+## 🚀 Projetos
+
+Aqui estão alguns projetos que desenvolvi durante meus estudos:
+
+- 📚 **Repositório de Aprendizados** — Registro dos meus estudos, anotações e exemplos práticos de programação.
+- 🌐 **BookShelf** — Projeto desenvolvido com HTML, CSS e JavaScript.
+
+ ## 📫 Contato
+
+- 💼 LinkedIn: [Wesley Oliveira](https://www.linkedin.com/in/wesley-oliveira-7392592ba/)
+- 💻 GitHub: [Wesleyk7](https://github.com/Wesleyk7)
