@@ -25,20 +25,20 @@
 <text x="62" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">LANGUAGE TELEMETRY</text>
 <text x="62" y="324" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">JavaScript</text>
 <rect x="180" y="311" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="311" width="133.2" height="12" rx="6" fill="#238cff"/>
-<text x="520" y="324" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">40.4%</text>
+<rect x="180" y="311" width="150.0" height="12" rx="6" fill="#238cff"/>
+<text x="520" y="324" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">45.5%</text>
 <text x="62" y="358" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">HTML</text>
 <rect x="180" y="345" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="345" width="84.3" height="12" rx="6" fill="#ff8a24"/>
-<text x="520" y="358" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">25.6%</text>
+<rect x="180" y="345" width="94.9" height="12" rx="6" fill="#ff8a24"/>
+<text x="520" y="358" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">28.8%</text>
 <text x="62" y="392" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">Python</text>
 <rect x="180" y="379" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="379" width="76.5" height="12" rx="6" fill="#49c7ff"/>
-<text x="520" y="392" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">23.2%</text>
+<rect x="180" y="379" width="44.6" height="12" rx="6" fill="#49c7ff"/>
+<text x="520" y="392" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">13.5%</text>
 <text x="62" y="426" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">CSS</text>
 <rect x="180" y="413" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="413" width="36.0" height="12" rx="6" fill="#8a63ff"/>
-<text x="520" y="426" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">10.9%</text>
+<rect x="180" y="413" width="40.5" height="12" rx="6" fill="#8a63ff"/>
+<text x="520" y="426" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">12.3%</text>
 <rect x="596" y="232" width="566" height="252" rx="16" fill="#0b1624" stroke="#17324f"/>
 <text x="620" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">MEU MOMENTO</text>
 <text x="620" y="306" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="#49c7ff">CONHECIMENTOS ATUAIS</text>
@@ -87,7 +87,7 @@
 <text x="538.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
 <rect x="570.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
 <text x="594.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
-<rect x="627.0" y="595.5" width="48.5" height="6.5" rx="4" fill="#ff8a24"/>
+<rect x="627.0" y="596.5" width="48.5" height="5.5" rx="4" fill="#ff8a24"/>
 <text x="651.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
 <rect x="683.5" y="558.0" width="48.5" height="44.0" rx="4" fill="#ff8a24"/>
 <text x="707.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
