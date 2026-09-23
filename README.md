@@ -2,18 +2,23 @@
   <img src="./assets/banner-setup.png" alt="Banner Wesley Oliveira" width="100%" />
 </p>
 
-
 ---
 
 ## 👨‍💻 Sobre mim
 
-> Estudante de **Análise e Desenvolvimento de Sistemas**, com interesse em **Suporte Técnico, Infraestrutura e Desenvolvimento**.  
-> Gosto de resolver problemas, aprender novas tecnologias e transformar conhecimento em soluções práticas.
+> Atualmente trabalho com **Suporte de TI** e curso **Análise e Desenvolvimento de Sistemas**.  
+> Estou direcionando meus estudos para **programação**, buscando desenvolver cada vez mais minhas habilidades e, futuramente, atuar profissionalmente como **desenvolvedor**.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ADS-Em%20curso-1f6feb?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/Suporte%20T%C3%A9cnico-Interesse-238cff?style=for-the-badge&logo=windows-terminal&logoColor=white&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/Infraestrutura-Aprendendo-49c7ff?style=for-the-badge&logo=server&logoColor=white&labelColor=0d1117" />
+
+🎓 **ADS** `Em curso`
+&nbsp;&nbsp;•&nbsp;&nbsp;
+🛠️ **Suporte de TI** `Trabalho atual`
+&nbsp;&nbsp;•&nbsp;&nbsp;
+💻 **Programação** `Aprendendo`
+&nbsp;&nbsp;•&nbsp;&nbsp;
+🚀 **Desenvolvimento** `Objetivo futuro`
+
 </p>
 
 ---
@@ -34,7 +39,7 @@
 
 ### 📚 Repositório de Aprendizados
 
-Registro dos meus estudos, anotações e exemplos práticos de programação.
+Registro dos meus estudos, anotações e exemplos práticos durante minha evolução em programação.
 
 `HTML` `CSS`
 
@@ -68,7 +73,12 @@ Projeto desenvolvido durante meus estudos utilizando HTML, CSS e JavaScript.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Wesleyk7-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Wesleyk7)
 
+[![Email](https://img.shields.io/badge/Email-wesleyk7oli%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wesleyk7oli@gmail.com)
+
 </p>
 
 ---
 
+<p align="center">
+  <b>Aprender • Praticar • Evoluir</b>
+</p>
