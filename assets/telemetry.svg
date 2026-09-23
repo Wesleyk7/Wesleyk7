@@ -25,46 +25,46 @@
 <text x="62" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">LANGUAGE TELEMETRY</text>
 <text x="62" y="324" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">JavaScript</text>
 <rect x="180" y="311" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="311" width="131.9" height="12" rx="6" fill="#238cff"/>
-<text x="520" y="324" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">40.0%</text>
+<rect x="180" y="311" width="133.2" height="12" rx="6" fill="#238cff"/>
+<text x="520" y="324" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">40.4%</text>
 <text x="62" y="358" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">HTML</text>
 <rect x="180" y="345" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="345" width="83.5" height="12" rx="6" fill="#ff8a24"/>
-<text x="520" y="358" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">25.3%</text>
+<rect x="180" y="345" width="84.3" height="12" rx="6" fill="#ff8a24"/>
+<text x="520" y="358" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">25.6%</text>
 <text x="62" y="392" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">Python</text>
 <rect x="180" y="379" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="379" width="79.0" height="12" rx="6" fill="#49c7ff"/>
-<text x="520" y="392" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">23.9%</text>
+<rect x="180" y="379" width="76.5" height="12" rx="6" fill="#49c7ff"/>
+<text x="520" y="392" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">23.2%</text>
 <text x="62" y="426" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">CSS</text>
 <rect x="180" y="413" width="330" height="12" rx="6" fill="#12263d"/>
-<rect x="180" y="413" width="35.6" height="12" rx="6" fill="#8a63ff"/>
-<text x="520" y="426" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">10.8%</text>
+<rect x="180" y="413" width="36.0" height="12" rx="6" fill="#8a63ff"/>
+<text x="520" y="426" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">10.9%</text>
 <rect x="596" y="232" width="566" height="252" rx="16" fill="#0b1624" stroke="#17324f"/>
 <text x="620" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">MEU MOMENTO</text>
 <text x="620" y="306" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="#49c7ff">CONHECIMENTOS ATUAIS</text>
 <circle cx="628" cy="334" r="4" fill="#42d17d"/>
 <text x="642" y="338" font-family="Segoe UI,Arial" font-size="13" fill="#e8eef7">HTML</text>
-<text x="815" y="338" text-anchor="end" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">estudando</text>
+<text x="805" y="338" text-anchor="end" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">estudando</text>
 <circle cx="628" cy="362" r="4" fill="#42d17d"/>
 <text x="642" y="366" font-family="Segoe UI,Arial" font-size="13" fill="#e8eef7">CSS</text>
-<text x="815" y="366" text-anchor="end" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">estudando</text>
+<text x="805" y="366" text-anchor="end" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">estudando</text>
 <circle cx="628" cy="390" r="4" fill="#42d17d"/>
 <text x="642" y="394" font-family="Segoe UI,Arial" font-size="13" fill="#e8eef7">Python</text>
-<text x="815" y="394" text-anchor="end" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">básico</text>
+<text x="805" y="394" text-anchor="end" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">básico</text>
 <circle cx="628" cy="418" r="4" fill="#42d17d"/>
 <text x="642" y="422" font-family="Segoe UI,Arial" font-size="13" fill="#e8eef7">Git &amp; GitHub</text>
-<text x="815" y="422" text-anchor="end" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">praticando</text>
-<text x="875" y="306" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="#ff8a24">INTERESSES</text>
-<rect x="875" y="322" width="124" height="30" rx="15" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".7"/>
-<text x="937" y="342" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="#e8eef7">Suporte Técnico</text>
-<rect x="1007" y="322" width="124" height="30" rx="15" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".7"/>
-<text x="1069" y="342" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="#e8eef7">Infraestrutura</text>
-<rect x="875" y="364" width="124" height="30" rx="15" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".7"/>
-<text x="937" y="384" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="#e8eef7">Desenvolvimento Web</text>
-<rect x="1007" y="364" width="124" height="30" rx="15" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".7"/>
-<text x="1069" y="384" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="#e8eef7">Full Stack</text>
-<rect x="875" y="406" width="256" height="30" rx="15" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".7"/>
-<text x="1003" y="426" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="#e8eef7">Inteligência Artificial e Dados</text>
+<text x="805" y="422" text-anchor="end" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">praticando</text>
+<text x="845" y="306" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="#ff8a24">INTERESSES</text>
+<rect x="845" y="322" width="285" height="27" rx="13.5" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".75"/>
+<text x="987.5" y="340" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10.5" font-weight="600" fill="#e8eef7">Suporte Técnico</text>
+<rect x="845" y="353" width="285" height="27" rx="13.5" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".75"/>
+<text x="987.5" y="371" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10.5" font-weight="600" fill="#e8eef7">Infraestrutura</text>
+<rect x="845" y="384" width="285" height="27" rx="13.5" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".75"/>
+<text x="987.5" y="402" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10.5" font-weight="600" fill="#e8eef7">Desenvolvimento Web</text>
+<rect x="845" y="415" width="285" height="27" rx="13.5" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".75"/>
+<text x="987.5" y="433" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10.5" font-weight="600" fill="#e8eef7">Full Stack</text>
+<rect x="845" y="446" width="285" height="27" rx="13.5" fill="#0d1a2a" stroke="#ff8a24" stroke-opacity=".75"/>
+<text x="987.5" y="464" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10.5" font-weight="600" fill="#e8eef7">Inteligência Artificial e Dados</text>
 <rect x="38" y="510" width="1124" height="112" rx="16" fill="#0b1624" stroke="#17324f"/>
 <text x="62" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">ACTIVITY PULSE • 12 MESES</text>
 <rect x="62.0" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
@@ -87,7 +87,7 @@
 <text x="538.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
 <rect x="570.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
 <text x="594.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
-<rect x="627.0" y="595.2" width="48.5" height="6.8" rx="4" fill="#ff8a24"/>
+<rect x="627.0" y="595.5" width="48.5" height="6.5" rx="4" fill="#ff8a24"/>
 <text x="651.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
 <rect x="683.5" y="558.0" width="48.5" height="44.0" rx="4" fill="#ff8a24"/>
 <text x="707.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
