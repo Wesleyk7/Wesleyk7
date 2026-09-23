@@ -3,7 +3,6 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
-import math
 import os
 import urllib.request
 from collections import defaultdict
@@ -13,13 +12,19 @@ USERNAME = os.getenv("GITHUB_USERNAME", "Wesleyk7")
 TOKEN = os.environ["GITHUB_TOKEN"]
 OUT = Path("assets/telemetry.svg")
 
-# Ajuste estes valores se quiser mudar a matriz de foco.
-FOCUS = {
-    "Suporte": 92,
-    "Infra": 88,
-    "Dev": 68,
-    "Aprendizado": 96,
-}
+# Só coisas que você já está estudando/praticando.
+CURRENT_SKILLS = [
+    ("HTML", "estudando"),
+    ("CSS", "estudando"),
+    ("Python", "básico"),
+    ("Git & GitHub", "praticando"),
+]
+
+# Áreas de interesse, sem fingir que já domina.
+INTERESTS = [
+    "Suporte Técnico",
+    "Infraestrutura",
+]
 
 
 def request_json(url: str, method: str = "GET", body: dict | None = None):
@@ -84,7 +89,6 @@ def fetch_contributions():
         "query($login: String!, $from: DateTime!, $to: DateTime!) {"
         " user(login: $login) {"
         " contributionsCollection(from: $from, to: $to) {"
-        " totalCommitContributions totalIssueContributions totalPullRequestContributions"
         " contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }"
         " }"
         " }"
@@ -110,33 +114,12 @@ def fetch_contributions():
     return response["data"]["user"]["contributionsCollection"]
 
 
-def points_for_radar(cx, cy, radius, values):
-    pts = []
-    n = len(values)
-    for i, value in enumerate(values):
-        angle = -math.pi / 2 + 2 * math.pi * i / n
-        r = radius * value / 100.0
-        pts.append(f"{cx + math.cos(angle)*r:.1f},{cy + math.sin(angle)*r:.1f}")
-    return " ".join(pts)
-
-
-def radar_grid(cx, cy, radius, count):
-    out = []
-    for level in (0.25, 0.5, 0.75, 1.0):
-        pts = points_for_radar(cx, cy, radius * level, [100] * count)
-        out.append(f'<polygon points="{pts}" fill="none" stroke="#1f3855" stroke-width="1"/>')
-    for i in range(count):
-        angle = -math.pi / 2 + 2 * math.pi * i / count
-        x = cx + math.cos(angle) * radius
-        y = cy + math.sin(angle) * radius
-        out.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="#172a40" stroke-width="1"/>')
-    return "\n".join(out)
-
-
 def render_svg(user, repos, languages, contrib):
     W, H = 1200, 650
+
     BG = "#08111d"
     PANEL = "#0b1624"
+    PANEL_2 = "#0d1a2a"
     BORDER = "#17324f"
     TEXT = "#e8eef7"
     MUTED = "#8da1b8"
@@ -144,21 +127,19 @@ def render_svg(user, repos, languages, contrib):
     CYAN = "#49c7ff"
     ORANGE = "#ff8a24"
     GREEN = "#42d17d"
+    PURPLE = "#8a63ff"
 
     top_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)[:5]
     lang_total = sum(v for _, v in top_langs) or 1
 
     calendar = contrib["contributionCalendar"]
     month_totals = defaultdict(int)
-    active_days = 0
 
     for week in calendar["weeks"]:
         for day in week["contributionDays"]:
             count = int(day["contributionCount"])
             date = dt.date.fromisoformat(day["date"])
             month_totals[date.strftime("%Y-%m")] += count
-            if count > 0:
-                active_days += 1
 
     now = dt.datetime.now(dt.timezone.utc)
     months = []
@@ -173,10 +154,6 @@ def render_svg(user, repos, languages, contrib):
         months.append((key, label, month_totals.get(key, 0)))
 
     recent = repos[:3]
-    total_contrib = int(calendar.get("totalContributions", 0))
-    total_commits = int(contrib.get("totalCommitContributions", 0))
-    public_repos = int(user.get("public_repos", len(repos)))
-    followers = int(user.get("followers", 0))
 
     parts = []
     a = parts.append
@@ -185,70 +162,68 @@ def render_svg(user, repos, languages, contrib):
     a(f'<rect width="{W}" height="{H}" rx="22" fill="{BG}"/>')
     a(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="21" fill="none" stroke="{BORDER}"/>')
 
+    # Header
     a(f'<text x="38" y="48" font-family="Segoe UI,Arial" font-size="28" font-weight="700" fill="{TEXT}">PROFILE TELEMETRY</text>')
-    a(f'<text x="38" y="72" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">@{esc(USERNAME)} • atualizado automaticamente</text>')
+    a(f'<text x="38" y="72" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">@{esc(USERNAME)} • evolução, estudos e atividade</text>')
 
-    metrics = [
-        ("REPOSITÓRIOS", public_repos, BLUE),
-        ("CONTRIBUIÇÕES", total_contrib, ORANGE),
-        ("COMMITS", total_commits, CYAN),
-        ("DIAS ATIVOS", active_days, GREEN),
-    ]
+    # Top section: no cards, just a clean current-learning strip
+    a(f'<rect x="38" y="96" width="1124" height="112" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
+    a(f'<text x="62" y="128" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">ESTUDANDO AGORA</text>')
+    a(f'<text x="62" y="150" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">sem nível inventado — apenas o que você realmente está praticando</text>')
 
-    for i, (label, value, accent) in enumerate(metrics):
-        x = 38 + i * 282
-        a(f'<rect x="{x}" y="96" width="266" height="92" rx="14" fill="{PANEL}" stroke="{BORDER}"/>')
-        a(f'<rect x="{x}" y="96" width="5" height="92" rx="3" fill="{accent}"/>')
-        a(f'<text x="{x+20}" y="126" font-family="Segoe UI,Arial" font-size="11" font-weight="600" fill="{MUTED}">{esc(label)}</text>')
-        a(f'<text x="{x+20}" y="164" font-family="Segoe UI,Arial" font-size="27" font-weight="800" fill="{TEXT}">{value}</text>')
+    skill_colors = [ORANGE, CYAN, GREEN, BLUE]
+    x = 62
+    for i, (name, status) in enumerate(CURRENT_SKILLS):
+        w = 220 if name != "Git & GitHub" else 250
+        a(f'<rect x="{x}" y="165" width="{w}" height="30" rx="15" fill="{PANEL_2}" stroke="{skill_colors[i]}" stroke-opacity=".8"/>')
+        a(f'<circle cx="{x+16}" cy="180" r="4" fill="{skill_colors[i]}"/>')
+        a(f'<text x="{x+30}" y="184" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(name)}</text>')
+        a(f'<text x="{x+w-16}" y="184" text-anchor="end" font-family="Segoe UI,Arial" font-size="11" fill="{MUTED}">{esc(status)}</text>')
+        x += w + 12
 
-    # Language telemetry panel
-    a(f'<rect x="38" y="214" width="540" height="250" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
-    a(f'<text x="62" y="244" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">LANGUAGE TELEMETRY</text>')
-    a(f'<text x="62" y="266" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">seus repositórios públicos próprios</text>')
+    # Left panel: language bars
+    a(f'<rect x="38" y="232" width="540" height="252" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
+    a(f'<text x="62" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">LANGUAGE TELEMETRY</text>')
+    a(f'<text x="62" y="286" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">com base nos seus repositórios públicos</text>')
 
-    colors = [BLUE, ORANGE, CYAN, "#7b61ff", GREEN]
+    colors = [BLUE, ORANGE, CYAN, PURPLE, GREEN]
     if top_langs:
         for i, (name, amount) in enumerate(top_langs):
             pct = amount / lang_total
-            y = 302 + i * 34
+            y = 324 + i * 34
             a(f'<text x="62" y="{y}" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="{TEXT}">{esc(name)}</text>')
             a(f'<rect x="180" y="{y-13}" width="330" height="12" rx="6" fill="#12263d"/>')
             a(f'<rect x="180" y="{y-13}" width="{330*pct:.1f}" height="12" rx="6" fill="{colors[i]}"/>')
             a(f'<text x="520" y="{y}" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">{pct*100:.1f}%</text>')
     else:
-        a(f'<text x="62" y="320" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">Ainda não há linguagens detectáveis.</text>')
+        a(f'<text x="62" y="340" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">Ainda não há linguagens detectáveis.</text>')
 
-    # Focus radar
-    a(f'<rect x="596" y="214" width="566" height="250" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
-    a(f'<text x="620" y="244" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">FOCUS MATRIX</text>')
-    a(f'<text x="620" y="266" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">ênfase atual • editável no script</text>')
+    # Right panel: what you know + interests
+    a(f'<rect x="596" y="232" width="566" height="252" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
+    a(f'<text x="620" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">MEU MOMENTO</text>')
+    a(f'<text x="620" y="286" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">conhecimentos atuais e áreas de interesse</text>')
 
-    cx, cy, radius = 790, 360, 82
-    values = list(FOCUS.values())
-    labels = list(FOCUS.keys())
-    a(radar_grid(cx, cy, radius, len(values)))
-    radar_pts = points_for_radar(cx, cy, radius, values)
-    a(f'<polygon points="{radar_pts}" fill="{BLUE}" fill-opacity=".22" stroke="{BLUE}" stroke-width="2"/>')
+    a(f'<text x="620" y="322" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="{CYAN}">CONHECIMENTOS ATUAIS</text>')
+    y = 348
+    for name, status in CURRENT_SKILLS:
+        a(f'<circle cx="628" cy="{y-4}" r="4" fill="{GREEN}"/>')
+        a(f'<text x="642" y="{y}" font-family="Segoe UI,Arial" font-size="13" fill="{TEXT}">{esc(name)}</text>')
+        a(f'<text x="840" y="{y}" font-family="Segoe UI,Arial" font-size="11" fill="{MUTED}">{esc(status)}</text>')
+        y += 28
 
-    for i, label in enumerate(labels):
-        angle = -math.pi / 2 + 2 * math.pi * i / len(labels)
-        lx = cx + math.cos(angle) * (radius + 30)
-        ly = cy + math.sin(angle) * (radius + 30)
-        anchor = "middle"
-        if math.cos(angle) > 0.3:
-            anchor = "start"
-        elif math.cos(angle) < -0.3:
-            anchor = "end"
-        a(f'<text x="{lx:.1f}" y="{ly:.1f}" text-anchor="{anchor}" font-family="Segoe UI,Arial" font-size="11" fill="{MUTED}">{esc(label)}</text>')
+    a(f'<text x="905" y="322" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="{ORANGE}">INTERESSES</text>')
+    y2 = 350
+    for interest in INTERESTS:
+        a(f'<rect x="905" y="{y2-18}" width="210" height="30" rx="15" fill="{PANEL_2}" stroke="{ORANGE}" stroke-opacity=".7"/>')
+        a(f'<text x="1010" y="{y2+2}" text-anchor="middle" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(interest)}</text>')
+        y2 += 44
 
-    # Activity pulse
-    a(f'<rect x="38" y="486" width="1124" height="126" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
-    a(f'<text x="62" y="516" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">ACTIVITY PULSE • 12 MESES</text>')
-    a(f'<text x="1140" y="516" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">{followers} seguidores • {len(languages)} linguagens</text>')
+    # Bottom panel: monthly activity + recent projects
+    a(f'<rect x="38" y="510" width="1124" height="112" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
+    a(f'<text x="62" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">ACTIVITY PULSE • 12 MESES</text>')
 
     max_month = max((v for _, _, v in months), default=1) or 1
-    chart_x, chart_y, chart_w, chart_h = 62, 542, 690, 48
+    chart_x, chart_y, chart_w, chart_h = 62, 558, 670, 44
     gap = 8
     bw = (chart_w - gap * 11) / 12
 
@@ -256,19 +231,18 @@ def render_svg(user, repos, languages, contrib):
         h = max(3, chart_h * value / max_month)
         x = chart_x + i * (bw + gap)
         y = chart_y + chart_h - h
-        color = BLUE if i < 6 else ORANGE
+        color = BLUE if i < 8 else ORANGE
         a(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{h:.1f}" rx="4" fill="{color}"/>')
-        a(f'<text x="{x+bw/2:.1f}" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="{MUTED}">{label}</text>')
+        a(f'<text x="{x+bw/2:.1f}" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="{MUTED}">{label}</text>')
 
-    # Recent projects
-    a(f'<text x="794" y="548" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">RECENT PROJECTS</text>')
+    a(f'<text x="790" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">RECENT PROJECTS</text>')
     if recent:
         for i, repo in enumerate(recent):
-            y = 573 + i * 19
+            y = 566 + i * 18
             desc = repo.get("description") or "sem descrição"
-            short = (desc[:42] + "…") if len(desc) > 43 else desc
-            a(f'<text x="794" y="{y}" font-family="Segoe UI,Arial" font-size="13" font-weight="600" fill="{TEXT}">{esc(repo["name"])}</text>')
-            a(f'<text x="930" y="{y}" font-family="Segoe UI,Arial" font-size="11" fill="{MUTED}">{esc(short)}</text>')
+            short = (desc[:34] + "…") if len(desc) > 35 else desc
+            a(f'<text x="790" y="{y}" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(repo["name"])}</text>')
+            a(f'<text x="920" y="{y}" font-family="Segoe UI,Arial" font-size="10" fill="{MUTED}">{esc(short)}</text>')
 
     a("</svg>")
     return "\n".join(parts)
