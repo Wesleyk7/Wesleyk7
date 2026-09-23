@@ -24,6 +24,9 @@ CURRENT_SKILLS = [
 INTERESTS = [
     "Suporte Técnico",
     "Infraestrutura",
+    "Desenvolvimento Web",
+    "Full Stack",
+    "Inteligência Artificial e Dados",
 ]
 
 
@@ -206,10 +209,26 @@ def render_svg(user, repos, languages, contrib):
 
     a(f'<text x="905" y="322" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="{ORANGE}">INTERESSES</text>')
     y2 = 350
-    for interest in INTERESTS:
-        a(f'<rect x="905" y="{y2-18}" width="210" height="30" rx="15" fill="{PANEL_2}" stroke="{ORANGE}" stroke-opacity=".7"/>')
-        a(f'<text x="1010" y="{y2+2}" text-anchor="middle" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(interest)}</text>')
-        y2 += 44
+    
+    for i, interest in enumerate(INTERESTS):
+    # Os quatro primeiros ficam em duas colunas
+    if i < 4:
+        col = i % 2
+        row = i // 2
+
+        x_interest = 875 + (col * 130)
+        y_interest = 338 + (row * 42)
+
+        a(f'<rect x="{x_interest}" y="{y_interest}" width="122" height="30" rx="15" fill="{PANEL_2}" stroke="{ORANGE}" stroke-opacity=".7"/>')
+        a(f'<text x="{x_interest + 61}" y="{y_interest + 20}" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="{TEXT}">{esc(interest)}</text>')
+
+    # O último fica maior, ocupando a linha inteira
+    else:
+        x_interest = 875
+        y_interest = 422
+
+        a(f'<rect x="{x_interest}" y="{y_interest}" width="252" height="30" rx="15" fill="{PANEL_2}" stroke="{ORANGE}" stroke-opacity=".7"/>')
+        a(f'<text x="{x_interest + 126}" y="{y_interest + 20}" text-anchor="middle" font-family="Segoe UI,Arial" font-size="9" font-weight="600" fill="{TEXT}">{esc(interest)}</text>')
 
     # Bottom panel: monthly activity + recent projects
     a(f'<rect x="38" y="510" width="1124" height="112" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
@@ -229,14 +248,10 @@ def render_svg(user, repos, languages, contrib):
         a(f'<text x="{x+bw/2:.1f}" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="{MUTED}">{label}</text>')
 
     a(f'<text x="790" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">RECENT PROJECTS</text>')
-    if recent:
-        for i, repo in enumerate(recent):
-            y = 566 + i * 18
-            desc = repo.get("description") or ""
-            short = (desc[:34] + "…") if len(desc) > 35 else desc
-            a(f'<text x="790" y="{y}" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(repo["name"])}</text>')
-            a(f'<text x="920" y="{y}" font-family="Segoe UI,Arial" font-size="10" fill="{MUTED}">{esc(short)}</text>')
-
+if recent:
+    for i, repo in enumerate(recent):
+        y = 566 + i * 18
+        a(f'<text x="790" y="{y}" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(repo["name"])}</text>')
     a("</svg>")
     return "\n".join(parts)
 
