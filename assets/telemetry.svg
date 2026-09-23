@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" rx="22" fill="#08111d"/>
+<rect x="1" y="1" width="1198" height="648" rx="21" fill="none" stroke="#17324f"/>
+<text x="38" y="48" font-family="Segoe UI,Arial" font-size="28" font-weight="700" fill="#e8eef7">PROFILE TELEMETRY</text>
+<text x="38" y="72" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">@Wesleyk7 • atualizado automaticamente</text>
+<rect x="38" y="96" width="266" height="92" rx="14" fill="#0b1624" stroke="#17324f"/>
+<rect x="38" y="96" width="5" height="92" rx="3" fill="#238cff"/>
+<text x="58" y="126" font-family="Segoe UI,Arial" font-size="11" font-weight="600" fill="#8da1b8">REPOSITÓRIOS</text>
+<text x="58" y="164" font-family="Segoe UI,Arial" font-size="27" font-weight="800" fill="#e8eef7">3</text>
+<rect x="320" y="96" width="266" height="92" rx="14" fill="#0b1624" stroke="#17324f"/>
+<rect x="320" y="96" width="5" height="92" rx="3" fill="#ff8a24"/>
+<text x="340" y="126" font-family="Segoe UI,Arial" font-size="11" font-weight="600" fill="#8da1b8">CONTRIBUIÇÕES</text>
+<text x="340" y="164" font-family="Segoe UI,Arial" font-size="27" font-weight="800" fill="#e8eef7">23</text>
+<rect x="602" y="96" width="266" height="92" rx="14" fill="#0b1624" stroke="#17324f"/>
+<rect x="602" y="96" width="5" height="92" rx="3" fill="#49c7ff"/>
+<text x="622" y="126" font-family="Segoe UI,Arial" font-size="11" font-weight="600" fill="#8da1b8">COMMITS</text>
+<text x="622" y="164" font-family="Segoe UI,Arial" font-size="27" font-weight="800" fill="#e8eef7">20</text>
+<rect x="884" y="96" width="266" height="92" rx="14" fill="#0b1624" stroke="#17324f"/>
+<rect x="884" y="96" width="5" height="92" rx="3" fill="#42d17d"/>
+<text x="904" y="126" font-family="Segoe UI,Arial" font-size="11" font-weight="600" fill="#8da1b8">DIAS ATIVOS</text>
+<text x="904" y="164" font-family="Segoe UI,Arial" font-size="27" font-weight="800" fill="#e8eef7">3</text>
+<rect x="38" y="214" width="540" height="250" rx="16" fill="#0b1624" stroke="#17324f"/>
+<text x="62" y="244" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">LANGUAGE TELEMETRY</text>
+<text x="62" y="266" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">seus repositórios públicos próprios</text>
+<text x="62" y="302" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">JavaScript</text>
+<rect x="180" y="289" width="330" height="12" rx="6" fill="#12263d"/>
+<rect x="180" y="289" width="134.3" height="12" rx="6" fill="#238cff"/>
+<text x="520" y="302" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">40.7%</text>
+<text x="62" y="336" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">HTML</text>
+<rect x="180" y="323" width="330" height="12" rx="6" fill="#12263d"/>
+<rect x="180" y="323" width="85.0" height="12" rx="6" fill="#ff8a24"/>
+<text x="520" y="336" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">25.8%</text>
+<text x="62" y="370" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">Python</text>
+<rect x="180" y="357" width="330" height="12" rx="6" fill="#12263d"/>
+<rect x="180" y="357" width="74.4" height="12" rx="6" fill="#49c7ff"/>
+<text x="520" y="370" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">22.5%</text>
+<text x="62" y="404" font-family="Segoe UI,Arial" font-size="14" font-weight="600" fill="#e8eef7">CSS</text>
+<rect x="180" y="391" width="330" height="12" rx="6" fill="#12263d"/>
+<rect x="180" y="391" width="36.3" height="12" rx="6" fill="#7b61ff"/>
+<text x="520" y="404" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">11.0%</text>
+<rect x="596" y="214" width="566" height="250" rx="16" fill="#0b1624" stroke="#17324f"/>
+<text x="620" y="244" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">FOCUS MATRIX</text>
+<text x="620" y="266" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">ênfase atual • editável no script</text>
+<polygon points="790.0,339.5 810.5,360.0 790.0,380.5 769.5,360.0" fill="none" stroke="#1f3855" stroke-width="1"/>
+<polygon points="790.0,319.0 831.0,360.0 790.0,401.0 749.0,360.0" fill="none" stroke="#1f3855" stroke-width="1"/>
+<polygon points="790.0,298.5 851.5,360.0 790.0,421.5 728.5,360.0" fill="none" stroke="#1f3855" stroke-width="1"/>
+<polygon points="790.0,278.0 872.0,360.0 790.0,442.0 708.0,360.0" fill="none" stroke="#1f3855" stroke-width="1"/>
+<line x1="790" y1="360" x2="790.0" y2="278.0" stroke="#172a40" stroke-width="1"/>
+<line x1="790" y1="360" x2="872.0" y2="360.0" stroke="#172a40" stroke-width="1"/>
+<line x1="790" y1="360" x2="790.0" y2="442.0" stroke="#172a40" stroke-width="1"/>
+<line x1="790" y1="360" x2="708.0" y2="360.0" stroke="#172a40" stroke-width="1"/>
+<polygon points="790.0,284.6 862.2,360.0 790.0,415.8 711.3,360.0" fill="#238cff" fill-opacity=".22" stroke="#238cff" stroke-width="2"/>
+<text x="790.0" y="248.0" text-anchor="middle" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">Suporte</text>
+<text x="902.0" y="360.0" text-anchor="start" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">Infra</text>
+<text x="790.0" y="472.0" text-anchor="middle" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">Dev</text>
+<text x="678.0" y="360.0" text-anchor="end" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">Aprendizado</text>
+<rect x="38" y="486" width="1124" height="126" rx="16" fill="#0b1624" stroke="#17324f"/>
+<text x="62" y="516" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">ACTIVITY PULSE • 12 MESES</text>
+<text x="1140" y="516" text-anchor="end" font-family="Segoe UI,Arial" font-size="12" fill="#8da1b8">0 seguidores • 4 linguagens</text>
+<rect x="62.0" y="587.0" width="50.2" height="3.0" rx="4" fill="#238cff"/>
+<text x="87.1" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Oct</text>
+<rect x="120.2" y="587.0" width="50.2" height="3.0" rx="4" fill="#238cff"/>
+<text x="145.2" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Nov</text>
+<rect x="178.3" y="587.0" width="50.2" height="3.0" rx="4" fill="#238cff"/>
+<text x="203.4" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Dec</text>
+<rect x="236.5" y="587.0" width="50.2" height="3.0" rx="4" fill="#238cff"/>
+<text x="261.6" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jan</text>
+<rect x="294.7" y="587.0" width="50.2" height="3.0" rx="4" fill="#238cff"/>
+<text x="319.7" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Feb</text>
+<rect x="352.8" y="587.0" width="50.2" height="3.0" rx="4" fill="#238cff"/>
+<text x="377.9" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Mar</text>
+<rect x="411.0" y="587.0" width="50.2" height="3.0" rx="4" fill="#ff8a24"/>
+<text x="436.1" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Apr</text>
+<rect x="469.2" y="587.0" width="50.2" height="3.0" rx="4" fill="#ff8a24"/>
+<text x="494.2" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">May</text>
+<rect x="527.3" y="587.0" width="50.2" height="3.0" rx="4" fill="#ff8a24"/>
+<text x="552.4" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
+<rect x="585.5" y="587.0" width="50.2" height="3.0" rx="4" fill="#ff8a24"/>
+<text x="610.6" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
+<rect x="643.7" y="579.9" width="50.2" height="10.1" rx="4" fill="#ff8a24"/>
+<text x="668.8" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
+<rect x="701.8" y="542.0" width="50.2" height="48.0" rx="4" fill="#ff8a24"/>
+<text x="726.9" y="606" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
+<text x="794" y="548" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">RECENT PROJECTS</text>
+<text x="794" y="573" font-family="Segoe UI,Arial" font-size="13" font-weight="600" fill="#e8eef7">Wesleyk7</text>
+<text x="930" y="573" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">sem descrição</text>
+<text x="794" y="592" font-family="Segoe UI,Arial" font-size="13" font-weight="600" fill="#e8eef7">BookShelf</text>
+<text x="930" y="592" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">sem descrição</text>
+<text x="794" y="611" font-family="Segoe UI,Arial" font-size="13" font-weight="600" fill="#e8eef7">today-i-learned</text>
+<text x="930" y="611" font-family="Segoe UI,Arial" font-size="11" fill="#8da1b8">Registro dos meus aprendizados em tecnolog…</text>
+</svg>
