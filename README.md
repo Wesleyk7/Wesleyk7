@@ -5,16 +5,18 @@
 
 ---
 
-## ⌨️ Sobre mim
+## 👨‍💻 Sobre mim
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas**, com interesse em **Suporte Técnico, Infraestrutura e Desenvolvimento**.
+> Estudante de **Análise e Desenvolvimento de Sistemas**, com interesse em **Suporte Técnico, Infraestrutura e Desenvolvimento**.  
+> Gosto de resolver problemas, aprender novas tecnologias e transformar conhecimento em soluções práticas.
 
-Gosto de aprender novas tecnologias, resolver problemas e transformar conhecimento em soluções práticas.
+<p align="center">
 
-- 🎓 Cursando Análise e Desenvolvimento de Sistemas
-- 🛠️ Interesse em Suporte Técnico e Infraestrutura
-- 💻 Aprendendo desenvolvimento web
-- 📚 Sempre buscando aprender algo novo
+![ADS](https://img.shields.io/badge/ADS-Em%20curso-238CFF?style=for-the-badge)
+![Suporte](https://img.shields.io/badge/Suporte%20Técnico-Interesse-238CFF?style=for-the-badge)
+![Infra](https://img.shields.io/badge/Infraestrutura-Aprendendo-238CFF?style=for-the-badge)
+
+</p>
 
 ---
 
@@ -22,6 +24,10 @@ Gosto de aprender novas tecnologias, resolver problemas e transformar conhecimen
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,python,git,github,vscode" />
+</p>
+
+<p align="center">
+  HTML • CSS • Python • Git • GitHub • VS Code
 </p>
 
 ---
@@ -32,27 +38,26 @@ Gosto de aprender novas tecnologias, resolver problemas e transformar conhecimen
 
 Registro dos meus estudos, anotações e exemplos práticos de programação.
 
-[Today I Learned](https://github.com/Wesleyk7/today-i-learned)
+`Git` `GitHub` `HTML` `CSS` `Python`
 
----
+➡️ [Ver repositório](COLE_AQUI_O_LINK)
+
+<br>
 
 ### 🌐 BookShelf
 
-Projeto desenvolvido com **HTML, CSS e JavaScript** durante meus estudos.
+Projeto desenvolvido durante meus estudos utilizando HTML, CSS e JavaScript.
 
-[BookShelf](https://github.com/Wesleyk7/BookShelf)
+`HTML` `CSS` `JavaScript`
+
+➡️ [Ver projeto](COLE_AQUI_O_LINK)
 
 ---
 
 ## 📊 Minha evolução no GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Wesleyk7&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Wesleyk7&theme=github-dark&hide_border=true" width="49%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Wesleyk7&theme=github-dark&hide_border=true" width="98%" />
+  <img src="./assets/telemetry.svg" alt="GitHub Profile Telemetry" width="100%" />
 </p>
 
 ---
