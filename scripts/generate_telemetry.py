@@ -12,7 +12,6 @@ USERNAME = os.getenv("GITHUB_USERNAME", "Wesleyk7")
 TOKEN = os.environ["GITHUB_TOKEN"]
 OUT = Path("assets/telemetry.svg")
 
-# Conhecimentos que você está estudando/praticando.
 CURRENT_SKILLS = [
     ("HTML", "estudando"),
     ("CSS", "estudando"),
@@ -20,7 +19,6 @@ CURRENT_SKILLS = [
     ("Git & GitHub", "praticando"),
 ]
 
-# Áreas que você tem interesse em aprender/explorar.
 INTERESTS = [
     "Suporte Técnico",
     "Infraestrutura",
@@ -207,7 +205,6 @@ def render_svg(user, repos, languages, contrib):
     parts = []
     a = parts.append
 
-    # Base do SVG
     a(
         f'<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
@@ -229,7 +226,7 @@ def render_svg(user, repos, languages, contrib):
         f'font-size="12" fill="{MUTED}">@{esc(USERNAME)}</text>'
     )
 
-    # ESTUDANDO AGORA
+    # Estudando agora
     a(
         f'<rect x="38" y="96" width="1124" height="112" '
         f'rx="16" fill="{PANEL}" stroke="{BORDER}"/>'
@@ -268,7 +265,7 @@ def render_svg(user, repos, languages, contrib):
 
         x += width + 12
 
-    # LANGUAGE TELEMETRY
+    # Language Telemetry
     a(
         f'<rect x="38" y="232" width="540" height="252" '
         f'rx="16" fill="{PANEL}" stroke="{BORDER}"/>'
@@ -313,7 +310,7 @@ def render_svg(user, repos, languages, contrib):
             f'Ainda não há linguagens detectáveis.</text>'
         )
 
-    # MEU MOMENTO
+    # Meu momento
     a(
         f'<rect x="596" y="232" width="566" height="252" '
         f'rx="16" fill="{PANEL}" stroke="{BORDER}"/>'
@@ -324,7 +321,7 @@ def render_svg(user, repos, languages, contrib):
         f'MEU MOMENTO</text>'
     )
 
-    # Conhecimentos atuais
+    # Coluna esquerda: conhecimentos atuais
     a(
         f'<text x="620" y="306" font-family="Segoe UI,Arial" '
         f'font-size="12" font-weight="700" fill="{CYAN}">'
@@ -344,62 +341,38 @@ def render_svg(user, repos, languages, contrib):
             f'fill="{TEXT}">{esc(name)}</text>'
         )
         a(
-            f'<text x="815" y="{y_skill}" text-anchor="end" '
-            f'font-family="Segoe UI,Arial" font-size="11" '
+            f'<text x="805" y="{y_skill}" text-anchor="end" '
+            f'font-family="Segoe UI,Arial" font-size="10" '
             f'fill="{MUTED}">{esc(status)}</text>'
         )
 
         y_skill += 28
 
-    # Interesses
+    # Coluna direita: interesses
     a(
-        f'<text x="875" y="306" font-family="Segoe UI,Arial" '
+        f'<text x="845" y="306" font-family="Segoe UI,Arial" '
         f'font-size="12" font-weight="700" fill="{ORANGE}">'
         f'INTERESSES</text>'
     )
 
-    for i, interest in enumerate(INTERESTS):
-        if i < 4:
-            col = i % 2
-            row = i // 2
+    interest_y = 322
 
-            x_interest = 875 + (col * 132)
-            y_interest = 322 + (row * 42)
+    for interest in INTERESTS:
+        a(
+            f'<rect x="845" y="{interest_y}" width="285" height="27" '
+            f'rx="13.5" fill="{PANEL_2}" stroke="{ORANGE}" '
+            f'stroke-opacity=".75"/>'
+        )
+        a(
+            f'<text x="987.5" y="{interest_y + 18}" '
+            f'text-anchor="middle" font-family="Segoe UI,Arial" '
+            f'font-size="10.5" font-weight="600" fill="{TEXT}">'
+            f'{esc(interest)}</text>'
+        )
 
-            a(
-                f'<rect x="{x_interest}" y="{y_interest}" '
-                f'width="124" height="30" rx="15" '
-                f'fill="{PANEL_2}" stroke="{ORANGE}" '
-                f'stroke-opacity=".7"/>'
-            )
-            a(
-                f'<text x="{x_interest + 62}" '
-                f'y="{y_interest + 20}" text-anchor="middle" '
-                f'font-family="Segoe UI,Arial" font-size="9" '
-                f'font-weight="600" fill="{TEXT}">'
-                f'{esc(interest)}</text>'
-            )
+        interest_y += 31
 
-        else:
-            # IA e Dados ocupa uma linha inteira
-            x_interest = 875
-            y_interest = 406
-
-            a(
-                f'<rect x="{x_interest}" y="{y_interest}" '
-                f'width="256" height="30" rx="15" '
-                f'fill="{PANEL_2}" stroke="{ORANGE}" '
-                f'stroke-opacity=".7"/>'
-            )
-            a(
-                f'<text x="{x_interest + 128}" '
-                f'y="{y_interest + 20}" text-anchor="middle" '
-                f'font-family="Segoe UI,Arial" font-size="9" '
-                f'font-weight="600" fill="{TEXT}">'
-                f'{esc(interest)}</text>'
-            )
-
-    # ACTIVITY PULSE + RECENT PROJECTS
+    # Activity Pulse
     a(
         f'<rect x="38" y="510" width="1124" height="112" '
         f'rx="16" fill="{PANEL}" stroke="{BORDER}"/>'
@@ -444,7 +417,7 @@ def render_svg(user, repos, languages, contrib):
             f'font-size="10" fill="{MUTED}">{label}</text>'
         )
 
-    # Projetos recentes — somente nomes
+    # Projetos recentes
     a(
         f'<text x="790" y="540" font-family="Segoe UI,Arial" '
         f'font-size="15" font-weight="700" fill="{TEXT}">'
@@ -495,4 +468,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
