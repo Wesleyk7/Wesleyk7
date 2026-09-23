@@ -164,13 +164,10 @@ def render_svg(user, repos, languages, contrib):
 
     # Header
     a(f'<text x="38" y="48" font-family="Segoe UI,Arial" font-size="28" font-weight="700" fill="{TEXT}">PROFILE TELEMETRY</text>')
-    a(f'<text x="38" y="72" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">@{esc(USERNAME)} • evolução, estudos e atividade</text>')
-
+    a(f'<text x="38" y="72" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">@{esc(USERNAME)}</text>')
     # Top section: no cards, just a clean current-learning strip
     a(f'<rect x="38" y="96" width="1124" height="112" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
     a(f'<text x="62" y="128" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">ESTUDANDO AGORA</text>')
-    a(f'<text x="62" y="150" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">sem nível inventado — apenas o que você realmente está praticando</text>')
-
     skill_colors = [ORANGE, CYAN, GREEN, BLUE]
     x = 62
     for i, (name, status) in enumerate(CURRENT_SKILLS):
@@ -184,8 +181,6 @@ def render_svg(user, repos, languages, contrib):
     # Left panel: language bars
     a(f'<rect x="38" y="232" width="540" height="252" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
     a(f'<text x="62" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">LANGUAGE TELEMETRY</text>')
-    a(f'<text x="62" y="286" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">com base nos seus repositórios públicos</text>')
-
     colors = [BLUE, ORANGE, CYAN, PURPLE, GREEN]
     if top_langs:
         for i, (name, amount) in enumerate(top_langs):
@@ -201,8 +196,6 @@ def render_svg(user, repos, languages, contrib):
     # Right panel: what you know + interests
     a(f'<rect x="596" y="232" width="566" height="252" rx="16" fill="{PANEL}" stroke="{BORDER}"/>')
     a(f'<text x="620" y="264" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="{TEXT}">MEU MOMENTO</text>')
-    a(f'<text x="620" y="286" font-family="Segoe UI,Arial" font-size="12" fill="{MUTED}">conhecimentos atuais e áreas de interesse</text>')
-
     a(f'<text x="620" y="322" font-family="Segoe UI,Arial" font-size="12" font-weight="700" fill="{CYAN}">CONHECIMENTOS ATUAIS</text>')
     y = 348
     for name, status in CURRENT_SKILLS:
@@ -239,7 +232,7 @@ def render_svg(user, repos, languages, contrib):
     if recent:
         for i, repo in enumerate(recent):
             y = 566 + i * 18
-            desc = repo.get("description") or "sem descrição"
+            desc = repo.get("description") or ""
             short = (desc[:34] + "…") if len(desc) > 35 else desc
             a(f'<text x="790" y="{y}" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="{TEXT}">{esc(repo["name"])}</text>')
             a(f'<text x="920" y="{y}" font-family="Segoe UI,Arial" font-size="10" fill="{MUTED}">{esc(short)}</text>')
