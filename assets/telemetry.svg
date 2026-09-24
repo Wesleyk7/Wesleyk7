@@ -87,12 +87,12 @@
 <text x="538.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
 <rect x="570.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
 <text x="594.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
-<rect x="627.0" y="596.5" width="48.5" height="5.5" rx="4" fill="#ff8a24"/>
+<rect x="627.0" y="598.2" width="48.5" height="3.8" rx="4" fill="#ff8a24"/>
 <text x="651.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
 <rect x="683.5" y="558.0" width="48.5" height="44.0" rx="4" fill="#ff8a24"/>
 <text x="707.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
 <text x="790" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">RECENT PROJECTS</text>
 <text x="790" y="566" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">Wesleyk7</text>
-<text x="790" y="584" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">BookShelf</text>
-<text x="790" y="602" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">today-i-learned</text>
+<text x="790" y="584" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">today-i-learned</text>
+<text x="790" y="602" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">BookShelf</text>
 </svg>
