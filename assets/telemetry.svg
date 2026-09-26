@@ -87,7 +87,7 @@
 <text x="538.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
 <rect x="570.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
 <text x="594.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
-<rect x="627.0" y="598.2" width="48.5" height="3.8" rx="4" fill="#ff8a24"/>
+<rect x="627.0" y="598.3" width="48.5" height="3.7" rx="4" fill="#ff8a24"/>
 <text x="651.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
 <rect x="683.5" y="558.0" width="48.5" height="44.0" rx="4" fill="#ff8a24"/>
 <text x="707.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
