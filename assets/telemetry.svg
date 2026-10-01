@@ -68,29 +68,29 @@
 <rect x="38" y="510" width="1124" height="112" rx="16" fill="#0b1624" stroke="#17324f"/>
 <text x="62" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">ACTIVITY PULSE • 12 MESES</text>
 <rect x="62.0" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="86.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Oct</text>
+<text x="86.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Nov</text>
 <rect x="118.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="142.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Nov</text>
+<text x="142.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Dec</text>
 <rect x="175.0" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="199.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Dec</text>
+<text x="199.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jan</text>
 <rect x="231.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="255.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jan</text>
+<text x="255.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Feb</text>
 <rect x="288.0" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="312.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Feb</text>
+<text x="312.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Mar</text>
 <rect x="344.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="368.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Mar</text>
+<text x="368.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Apr</text>
 <rect x="401.0" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="425.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Apr</text>
+<text x="425.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">May</text>
 <rect x="457.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#238cff"/>
-<text x="481.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">May</text>
+<text x="481.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
 <rect x="514.0" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
-<text x="538.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jun</text>
-<rect x="570.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
-<text x="594.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
-<rect x="627.0" y="598.7" width="48.5" height="3.3" rx="4" fill="#ff8a24"/>
-<text x="651.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
-<rect x="683.5" y="558.0" width="48.5" height="44.0" rx="4" fill="#ff8a24"/>
-<text x="707.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
+<text x="538.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Jul</text>
+<rect x="570.5" y="598.8" width="48.5" height="3.2" rx="4" fill="#ff8a24"/>
+<text x="594.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Aug</text>
+<rect x="627.0" y="558.0" width="48.5" height="44.0" rx="4" fill="#ff8a24"/>
+<text x="651.2" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Sep</text>
+<rect x="683.5" y="599.0" width="48.5" height="3.0" rx="4" fill="#ff8a24"/>
+<text x="707.8" y="616" text-anchor="middle" font-family="Segoe UI,Arial" font-size="10" fill="#8da1b8">Oct</text>
 <text x="790" y="540" font-family="Segoe UI,Arial" font-size="15" font-weight="700" fill="#e8eef7">RECENT PROJECTS</text>
 <text x="790" y="566" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">Wesleyk7</text>
 <text x="790" y="584" font-family="Segoe UI,Arial" font-size="12" font-weight="600" fill="#e8eef7">today-i-learned</text>
